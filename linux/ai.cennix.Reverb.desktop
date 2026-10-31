@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Name=Reverb
+Comment=Offline dictation
+Exec=reverb
+Icon=audio-input-microphone
+Terminal=false
+Categories=AudioVideo;Audio;Accessibility;
+Keywords=dictation;speech;voice;typing;
+StartupWMClass=Reverb
+Actions=Dictate;
+
+[Desktop Action Dictate]
+Name=Start or finish dictation
+Exec=reverb --toggle

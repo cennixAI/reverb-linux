@@ -1,0 +1,41 @@
+Reverb includes work from the projects below. Their individual copyright,
+attribution, and license terms travel with the app.
+
+Computah — https://github.com/musubipapi/computah
+  Copyright (c) 2026 Computah contributors. License: LICENSE.
+  Used for: the computer-control engine in Sources/ComputahCore (nearly unchanged)
+  and the app scaffolding Sources/Reverb started from (notch, debug panel, launch
+  options, diagnostics). Original documentation: docs/computah.
+
+Cuelume — https://github.com/Danilaa1/cuelume
+  Copyright (c) 2026 Daniel Belyi.
+  License: Sources/Reverb/Resources/Sounds/Cuelume-LICENSE.txt.
+  Used for: the listening sounds (sparkle.wav, droplet.wav), rendered from Cuelume 0.2.2.
+  Details: Sources/Reverb/Resources/Sounds/README.md.
+
+thinking-orbs — https://github.com/Jakubantalik/thinking-orbs
+  Copyright (c) 2026 Jakub Antalik. License: licenses/thinking-orbs-LICENSE.txt.
+  Used for: the orb animations, ported to Swift in Sources/Reverb/UI/Orbs.swift.
+
+FluidAudio — https://github.com/FluidInference/FluidAudio
+  Version 0.17.7. License: licenses/FluidAudio-LICENSE.txt (Apache 2.0).
+  Used for: native Core ML speech recognition and audio preprocessing.
+  Additional notices: licenses/FluidAudio-ThirdPartyLicenses/.
+
+Parakeet Unified — https://huggingface.co/nvidia/parakeet-unified-en-0.6b
+  Licensed by NVIDIA Corporation under the NVIDIA Open Model License
+  License: licenses/NVIDIA-Open-Model-License.pdf.
+  Core ML conversion: FluidInference,
+  https://huggingface.co/FluidInference/parakeet-unified-en-0.6b-coreml
+  Revision d32e972dd4315f1dc3f6be28fb2aab0ab3e80358.
+  The app ships the int8 640 ms streaming encoder, decoder, joint, and vocabulary
+  unmodified. Other model variants downloaded for comparison are not packaged.
+
+Kokoro-82M — https://huggingface.co/hexgrad/Kokoro-82M
+  Apache 2.0. License: licenses/Kokoro-LICENSE.txt.
+  Used for: optional offline Heart neural speech through FluidAudio's Core ML pipeline.
+  Core ML conversion: FluidInference / laishere,
+  https://huggingface.co/FluidInference/kokoro-82m-coreml
+  Revision d93c5f3eed11847fb81bd6d6a76665e133d7ca77.
+  Pronunciation frontend: FluidAudio's Misaki lexicon and G2P assets;
+  see licenses/FluidAudio-ThirdPartyLicenses/.
